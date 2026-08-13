@@ -16,6 +16,8 @@ public class Exercicio24 {
 
         System.out.println("A quantidade de litros usados foram de : " + litrosUsados);
 
+        scanner.close();
+
 
     }
 }
