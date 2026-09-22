@@ -13,22 +13,21 @@ public class Exercicio04 {
             nums[i] = sc.nextInt();
 
         }
+        int maior = nums[0];
+        int menor = nums[0];
 
-        for (int i = 0; i < nums.length; i++){
-            System.out.println(nums);
+        for (int numero : nums) {
+            if (numero > maior) {
+                maior = numero;
+            }
+            if (numero < menor) {
+                menor = numero;
+            }
         }
 
-        int maior = 1;
-        int menor = 1;
+        System.out.println("Maior: " + maior);
+        System.out.println("Menor: " + menor);
 
-        for (int numero : nums){
-           maior = numero;
-           if (maior > numero){
-               System.out.println("O maior é" + maior);
-           } else {
-               menor = numero;
-               System.out.println("O menor é: " + menor);
-           }
-        }
+        sc.close();
     }
 }
